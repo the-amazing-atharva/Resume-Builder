@@ -38,7 +38,8 @@ img {
   width: 100%;
 }
 
-section {
+section,
+.milestone {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -131,12 +132,12 @@ section {
   color: #0085c9;
 }
 
-/* ABOUT */
-#about {
+/* INFO */
+#info {
   position: relative;
 }
 
-#about::before {
+/* #about::before {
   content: "";
   width: 30%;
   height: 100%;
@@ -145,10 +146,11 @@ section {
   left: 0;
   background-color: #00a6fb;
   z-index: -1;
-}
+} */
 
-#about h6 {
-  color: #f50e5d;
+#info h6 {
+  /* color: #f50e5d; */
+  color: #00a6fb;
 }
 
 @media (max-width: 992px) {
@@ -156,4 +158,18 @@ section {
     height: 40%;
     width: 100%;
   }
+}
+
+/* MILESTONE */
+#milestone {
+  background: linear-gradient(rgba(0, 166, 251, 0.85), rgba(0, 166, 251, 0.85)),
+    url(../images/15872.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#milestone h1,
+#milestone p {
+  color: #fff;
 }
