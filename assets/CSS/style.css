@@ -7,6 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&family=Roboto+Slab:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Oswald:wght@200..700&family=Pacifico&family=Roboto+Slab:wght@100..900&display=swap");
 
 body {
   font-family: "Spline Sans", sans-serif;
@@ -52,10 +53,31 @@ section,
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
+/* Navbar */
+.navbar-nav .nav-link.active {
+  color: #00a6fb;
+}
+
+.nav-logo {
+  font-family: "Mochiy Pop P One", "Pacifico", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #222;
+}
+
+.nav-a:hover {
+  font-weight: 600;
+}
+
+.logo-span {
+  color: #0085c9;
+}
+
 /* Btn */
 .btn {
   border-radius: 0;
-  padding: 14px 38px;
+  /* padding: 14px 38px; */
+  padding: 12px 20px;
 }
 
 .btn-brand {
@@ -110,26 +132,6 @@ section,
   width: 40px;
   height: 70px;
   margin: auto;
-}
-
-/* Navbar */
-.navbar-nav .nav-link.active {
-  color: #00a6fb;
-}
-
-.nav-logo {
-  font-family: "Pacifico", sans-serif;
-  font-weight: bold;
-  font-size: 32px;
-  color: #222;
-}
-
-.nav-a:hover {
-  font-weight: 600;
-}
-
-.logo-span {
-  color: #0085c9;
 }
 
 /* INFO */
