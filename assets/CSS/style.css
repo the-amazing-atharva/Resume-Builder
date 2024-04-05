@@ -173,3 +173,23 @@ section,
 #milestone p {
   color: #fff;
 }
+
+/* SERVICES SECTION */
+#services h6 {
+  color: #00a6fb;
+}
+
+.service {
+  padding: 32px;
+  background-color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.service h5 {
+  margin-top: 24px;
+  margin-bottom: 14px;
+}
+
+.service img {
+  width: 90px;
+}
