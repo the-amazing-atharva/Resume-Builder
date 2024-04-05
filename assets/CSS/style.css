@@ -123,6 +123,10 @@ section {
   color: #222;
 }
 
+.nav-a:hover {
+  font-weight: 600;
+}
+
 .logo-span {
   color: #0085c9;
 }
