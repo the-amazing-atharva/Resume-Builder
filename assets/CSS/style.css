@@ -171,6 +171,11 @@ section,
   margin: auto;
 }
 
+/* HOW TO USE */
+#how h6 {
+  color: #00a6fb;
+}
+
 /* INFO */
 #info {
   position: relative;
