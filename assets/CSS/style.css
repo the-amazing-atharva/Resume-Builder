@@ -274,6 +274,19 @@ section,
   transform: scale(1.02);
 }
 
+/* BLOG */
+#blog .blog-title {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+#blog .blog-p {
+  font-family: "Spline Sans", sans-serif;
+  color: #777;
+  font-size: 1rem;
+}
+#blog h6 {
+  color: #00a6fb;
+}
+
 /* FAQ Section Styles */
 #faq h6 {
   color: #00a6fb;
