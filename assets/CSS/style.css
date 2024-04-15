@@ -254,6 +254,77 @@ section,
   font-weight: 450;
 }
 
+/* FEATURES SECTION */
+#features h6 {
+  color: #00a6fb;
+}
+
+.feature-icon {
+  font-size: 2.5rem; /* Adjust the size as needed */
+  color: #00a6fb;
+}
+
+/* FAQ Section Styles */
+#faq h6 {
+  color: #00a6fb;
+}
+#faq .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#faq .section-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+
+.faq-item {
+  margin-bottom: 30px;
+}
+
+.faq-question {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Accordion Styles */
+.accordion-body {
+  color: #0085c9;
+}
+
+#faqAccordion .accordion-button {
+  background-color: #f8f9fa;
+  color: #343a40;
+  font-weight: 600;
+}
+
+#faqAccordion .accordion-button:focus {
+  box-shadow: none;
+}
+
+#faqAccordion .accordion-body {
+  border-top: 1px solid #dee2e6;
+}
+
+/* Image Styles */
+.img-fluid {
+  max-width: 90%;
+  height: auto;
+}
+
+/* Adjust spacing if needed */
+@media (min-width: 768px) {
+  .accordion {
+    margin-top: 40px; /* Adjust as needed */
+  }
+}
+
 /* FOOTER SECTION */
 .logo-text {
   font-family: "Mochiy Pop P One";
