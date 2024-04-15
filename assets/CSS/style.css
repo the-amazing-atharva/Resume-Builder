@@ -264,6 +264,16 @@ section,
   color: #00a6fb;
 }
 
+.feature-item {
+  padding: 28px;
+  background-color: #fcfbfb;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.09);
+}
+.feature-item:hover {
+  transition: all 0.4s;
+  transform: scale(1.02);
+}
+
 /* FAQ Section Styles */
 #faq h6 {
   color: #00a6fb;
