@@ -9,7 +9,8 @@
   --clr-dark: #1e2532;
   --clr-black: #000;
   --clr-grey: #656e83;
-  --clr-green: #084c41;
+  /* --clr-green: #084c41; */
+  --clr-green: #0093dc;
   --font-poppins: "Poppins", sans-serif;
   --font-manrope: "Manrope", sans-serif;
   --transition: all 300ms ease-in-out;
