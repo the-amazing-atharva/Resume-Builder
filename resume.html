@@ -29,7 +29,7 @@
       </div>
     </nav>
 
-    <!-- Settings Panel (Place this within a relevant section of your existing HTML, such as a sidebar or a modal) -->
+    <!-- Settings Panel -->
     <div class="settings-panel">
       <div class="container">
         <h3 class="settings-title">Customize Your Resume</h3>
@@ -178,14 +178,14 @@
                   </div>
                   <div class="form-elem">
                     <label for="" class="form-label">Summary</label>
-                    <input
+                    <textarea
                       name="summary"
-                      type="text"
                       class="form-control summary"
                       id=""
                       onkeyup="generateCV()"
                       placeholder="e.g. About You"
-                    />
+                      style="resize: vertical"
+                    ></textarea>
                     <span class="form-text"></span>
                   </div>
                 </div>
@@ -216,14 +216,14 @@
                         </div>
                         <div class="form-elem">
                           <label for="" class="form-label">Description</label>
-                          <input
+                          <textarea
                             name="achieve_description"
-                            type="text"
                             class="form-control achieve_description"
                             id=""
                             onkeyup="generateCV()"
                             placeholder="e.g. Description of Achievement"
-                          />
+                            style="resize: vertical"
+                          ></textarea>
                           <span class="form-text"></span>
                         </div>
                       </div>
@@ -248,6 +248,110 @@
               </div>
             </div>
 
+            <!-- EDU -->
+            <div class="cv-form-blk">
+              <div class="cv-form-row-title">
+                <h3>education</h3>
+              </div>
+
+              <div class="row-separator repeater">
+                <div class="repeater" data-repeater-list="group-c">
+                  <div data-repeater-item>
+                    <div class="cv-form-row cv-form-row-experience">
+                      <div class="cols-3">
+                        <div class="form-elem">
+                          <label for="" class="form-label">School</label>
+                          <input
+                            name="edu_school"
+                            type="text"
+                            class="form-control edu_school"
+                            id=""
+                            onkeyup="generateCV()"
+                          />
+                          <span class="form-text"></span>
+                        </div>
+                        <div class="form-elem">
+                          <label for="" class="form-label">Degree</label>
+                          <input
+                            name="edu_degree"
+                            type="text"
+                            class="form-control edu_degree"
+                            id=""
+                            onkeyup="generateCV()"
+                          />
+                          <span class="form-text"></span>
+                        </div>
+                        <div class="form-elem">
+                          <label for="" class="form-label">City</label>
+                          <input
+                            name="edu_city"
+                            type="text"
+                            class="form-control edu_city"
+                            id=""
+                            onkeyup="generateCV()"
+                          />
+                          <span class="form-text"></span>
+                        </div>
+                      </div>
+
+                      <div class="cols-3">
+                        <div class="form-elem">
+                          <label for="" class="form-label">Start Date</label>
+                          <input
+                            name="edu_start_date"
+                            type="date"
+                            class="form-control edu_start_date"
+                            id=""
+                            onkeyup="generateCV()"
+                          />
+                          <span class="form-text"></span>
+                        </div>
+                        <div class="form-elem">
+                          <label for="" class="form-label">End Date</label>
+                          <input
+                            name="edu_graduation_date"
+                            type="date"
+                            class="form-control edu_graduation_date"
+                            id=""
+                            onkeyup="generateCV()"
+                          />
+                          <span class="form-text"></span>
+                        </div>
+                        <div class="form-elem">
+                          <label for="" class="form-label">Description</label>
+                          <textarea
+                            name="edu_description"
+                            class="form-control edu_description"
+                            id=""
+                            onkeyup="generateCV()"
+                            style="resize: vertical"
+                          ></textarea>
+                          <span class="form-text"></span>
+                        </div>
+                      </div>
+
+                      <button
+                        data-repeater-delete
+                        type="button"
+                        class="repeater-remove-btn"
+                      >
+                        -
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  data-repeater-create
+                  value="Add"
+                  class="repeater-add-btn"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+
+            <!-- EXP -->
             <div class="cv-form-blk">
               <div class="cv-form-row-title">
                 <h3>experience</h3>
@@ -320,115 +424,13 @@
                         </div>
                         <div class="form-elem">
                           <label for="" class="form-label">Description</label>
-                          <input
+                          <textarea
                             name="exp_description"
-                            type="text"
                             class="form-control exp_description"
                             id=""
                             onkeyup="generateCV()"
-                          />
-                          <span class="form-text"></span>
-                        </div>
-                      </div>
-
-                      <button
-                        data-repeater-delete
-                        type="button"
-                        class="repeater-remove-btn"
-                      >
-                        -
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  type="button"
-                  data-repeater-create
-                  value="Add"
-                  class="repeater-add-btn"
-                >
-                  +
-                </button>
-              </div>
-            </div>
-
-            <div class="cv-form-blk">
-              <div class="cv-form-row-title">
-                <h3>education</h3>
-              </div>
-
-              <div class="row-separator repeater">
-                <div class="repeater" data-repeater-list="group-c">
-                  <div data-repeater-item>
-                    <div class="cv-form-row cv-form-row-experience">
-                      <div class="cols-3">
-                        <div class="form-elem">
-                          <label for="" class="form-label">School</label>
-                          <input
-                            name="edu_school"
-                            type="text"
-                            class="form-control edu_school"
-                            id=""
-                            onkeyup="generateCV()"
-                          />
-                          <span class="form-text"></span>
-                        </div>
-                        <div class="form-elem">
-                          <label for="" class="form-label">Degree</label>
-                          <input
-                            name="edu_degree"
-                            type="text"
-                            class="form-control edu_degree"
-                            id=""
-                            onkeyup="generateCV()"
-                          />
-                          <span class="form-text"></span>
-                        </div>
-                        <div class="form-elem">
-                          <label for="" class="form-label">City</label>
-                          <input
-                            name="edu_city"
-                            type="text"
-                            class="form-control edu_city"
-                            id=""
-                            onkeyup="generateCV()"
-                          />
-                          <span class="form-text"></span>
-                        </div>
-                      </div>
-
-                      <div class="cols-3">
-                        <div class="form-elem">
-                          <label for="" class="form-label">Start Date</label>
-                          <input
-                            name="edu_start_date"
-                            type="date"
-                            class="form-control edu_start_date"
-                            id=""
-                            onkeyup="generateCV()"
-                          />
-                          <span class="form-text"></span>
-                        </div>
-                        <div class="form-elem">
-                          <label for="" class="form-label">End Date</label>
-                          <input
-                            name="edu_graduation_date"
-                            type="date"
-                            class="form-control edu_graduation_date"
-                            id=""
-                            onkeyup="generateCV()"
-                          />
-                          <span class="form-text"></span>
-                        </div>
-                        <div class="form-elem">
-                          <label for="" class="form-label">Description</label>
-                          <input
-                            name="edu_description"
-                            type="text"
-                            class="form-control edu_description"
-                            id=""
-                            onkeyup="generateCV()"
-                          />
+                            style="resize: vertical"
+                          ></textarea>
                           <span class="form-text"></span>
                         </div>
                       </div>
@@ -488,13 +490,13 @@
                         </div>
                         <div class="form-elem">
                           <label for="" class="form-label">Description</label>
-                          <input
+                          <textarea
                             name="proj_description"
-                            type="text"
                             class="form-control proj_description"
                             id=""
                             onkeyup="generateCV()"
-                          />
+                            style="resize: vertical"
+                          ></textarea>
                           <span class="form-text"></span>
                         </div>
                       </div>
