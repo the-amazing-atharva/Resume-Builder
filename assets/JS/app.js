@@ -340,11 +340,11 @@ const displayCV = (userData) => {
 };
 
 // generate CV
-// const generateCV = () => {
-//   let userData = getUserInputs();
-//   displayCV(userData);
-//   console.log(userData);
-// };
+const generateCV = () => {
+  let userData = getUserInputs();
+  displayCV(userData);
+  console.log(userData);
+};
 
 function previewImage() {
   let oFReader = new FileReader();
