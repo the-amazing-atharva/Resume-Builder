@@ -29,6 +29,35 @@
       </div>
     </nav>
 
+    <!-- Settings Panel (Place this within a relevant section of your existing HTML, such as a sidebar or a modal) -->
+    <div class="settings-panel">
+      <div class="container">
+        <h3 class="settings-title">Customize Your Resume</h3>
+        <div class="settings-group">
+          <label for="resume-color" class="settings-label"
+            >Primary Color:</label
+          >
+          <input
+            type="color"
+            id="resume-color"
+            name="resume-color"
+            value="#1a91f0"
+            class="settings-input"
+          />
+        </div>
+        <div class="settings-group">
+          <label for="resume-font" class="settings-label">Font Family:</label>
+          <select id="resume-font" name="resume-font" class="settings-input">
+            <option value="Poppins">Poppins</option>
+            <option value="Manrope">Manrope</option>
+            <option value="Arial">Arial</option>
+            <option value="Georgia">Georgia</option>
+            <!-- Add more fonts as needed -->
+          </select>
+        </div>
+      </div>
+    </div>
+
     <section id="about-sc" class="">
       <div class="container">
         <div class="about-cnt">
@@ -654,6 +683,20 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- Custom JS -->
+    <!-- COLOR AND FONT -->
+    <script>
+      document
+        .getElementById("resume-color")
+        .addEventListener("input", function () {
+          document.documentElement.style.setProperty("--clr-blue", this.value);
+        });
+
+      document
+        .getElementById("resume-font")
+        .addEventListener("change", function () {
+          document.body.style.fontFamily = this.value;
+        });
+    </script>
     <script src="assets/JS/script.js"></script>
     <script src="assets/JS/app.js"></script>
   </body>
